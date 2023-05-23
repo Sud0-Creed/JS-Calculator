@@ -12,15 +12,21 @@ h1 {
 }
 
 .calc-main {
+    width: 60%;
+    max-width: 580px;
+    margin-left: 25%;
 
-    display: flex;
-    justify-content: center;
 }
+
+.numpad-wrap{
+    margin-top: 70px;
+}
+
 
 .io-wrap {
     margin-bottom: 2rem;
     margin-top: 2.5rem;
-
+    display: flex;
 }
 
 /* Dial pad grid layout */
@@ -33,25 +39,26 @@ h1 {
 
 .pad-grid div {
 
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    border: 0.1px solid #3700ff5b;
+    border: 0.1px solid #3700ff3a;
     border-radius: 5px;
-    padding: 10px;
+    padding: 25px 10px;
     background-color: #eeedf5;
     text-align: center;
-    color: #cc5607cc;
+    color: #e96e1ce0;
 }
 
-.io-wrap input {
+/* Display Layout */
+.input {
     background-color: #ffffffd3;
-    padding: 15px;
-    font-family: Cambria, sans-serif;
-    font-size: 1.5rem;
-    width: 230px;
-    height: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    width: 530px;
+    height: 60px;
     border-radius: 7px;
-    border: 1px solid #00000067;
+    border: 1px solid #1f65e681;
 
 }
 
@@ -60,7 +67,7 @@ h1 {
     font-family: calibri;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #0e3249;
+    color: #0e3249e0;
 }
 
 /* Effects */
