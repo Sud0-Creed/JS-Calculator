@@ -10,17 +10,35 @@ console.log(pad.innerHTML)
 //* Used event bubbling on parent element.
 pad.addEventListener('click', function (e) {
 
+
     if (e.target.className == "pad") {
 
         //Get the value of the button clicked
         const div = e.target.innerHTML;
 
-        console.log(div)
         //Append the value clicked to the display
         display.innerHTML += div
+
+
+    } else if (e.target.className == 'equal') {
+
+        //Get all the inputs
+        const output = display.innerHTML
+
+        //Pass output into function
+        let answer = equal(output)
+
+        display.textContent = answer
+
     }
 
 })
 
+//! Functions test
+function equal(calc) {
 
+    //Evaluate string expression and return result
+    answer = eval(calc)
 
+    return answer
+}
