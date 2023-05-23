@@ -20,8 +20,20 @@ h1 {
 .io-wrap {
     margin-bottom: 2rem;
     margin-top: 2.5rem;
+    display: flex;
 
 }
+
+/* Display Layout */
+.input{
+    border: 1px solid #0919254d;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background-color: #d5eafc65;
+
+}
+
+
 
 /* Dial pad grid layout */
 .pad-grid {
