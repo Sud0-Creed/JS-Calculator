@@ -3,9 +3,10 @@ import {equal, clear, del} from "./calculations.js";
 
 //* Target DOM elements
 export const display = document.querySelector(".input");
-export const pad = document.querySelector(".pad-grid");
+const pad = document.querySelector(".pad-grid");
+const body = document.querySelector('.main')
 
-console.log(equal)
+console.log(body)
 
 
 //* Added event listen to the parent element.
@@ -27,6 +28,11 @@ pad.addEventListener("click", function (e) {
         //Pass output into function
         let answer = equal(output);
 
+        //Change output color
+        display.style.color = "#0f6be2"
+
+
+
         display.textContent = answer;
     } else if (e.target.className == "backspace") {
         del()
@@ -36,6 +42,20 @@ pad.addEventListener("click", function (e) {
         clear()
 
     }
+
+    //*Theme conditions
+    else if (e.target.className == "t1"){
+        body.setAttribute('class', 'one')
+    }
+
+    else if (e.target.className == "t2"){
+        body.setAttribute('class', 'two')
+    }
+
+    else if (e.target.className == "t3"){
+        body.setAttribute('class', 'three')
+    }
+
 
 });
 
