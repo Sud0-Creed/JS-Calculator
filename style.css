@@ -1,11 +1,14 @@
 /* Layout */
 body {
-    font-family: Lato, sans-serif;
+    font-family: libre-baskerville, sans-serif;
     background-color: #f6fbff;
 }
 
 h1 {
     text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #0b304e;
 }
 
 .calc-main {
@@ -30,33 +33,34 @@ h1 {
 
 .pad-grid div {
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border: 0.1px solid #3700ff5b;
     border-radius: 5px;
     padding: 10px;
     background-color: #eeedf5;
     text-align: center;
+    color: #cc5607cc;
 }
 
-.io-wrap input{
-background-color: #e3f3fd65;
-padding: 15px;
-font-family: Cambria, sans-serif;
-font-size: 2rem;
-width: 230px;
-height: 20px;
-border-radius: 15px;
-border: 1px solid #0000004f;
+.io-wrap input {
+    background-color: #ffffffd3;
+    padding: 15px;
+    font-family: Cambria, sans-serif;
+    font-size: 1.5rem;
+    width: 230px;
+    height: 20px;
+    border-radius: 7px;
+    border: 1px solid #00000067;
 
 }
 
-.io-wrap label{
-margin-left: 30px;
-font-family: calibri;
-font-size: 1.3rem;
-font-weight: bold;
-color: #0e3249;
+.io-wrap label {
+    margin-left: 30px;
+    font-family: calibri;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0e3249;
 }
 
 /* Effects */
@@ -66,8 +70,7 @@ color: #0e3249;
 
 }
 
-.io-wrap input:focus{
+.io-wrap input:focus {
 
-    
-border: #1dd6d6 5px solid;
+    border: #1dd6d6 5px solid;
 }
