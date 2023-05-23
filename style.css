@@ -26,7 +26,20 @@ body{
 
 .pad-grid div{
 
+    font-size: 2rem;
     font-weight: bold;
     border: 0.5px solid orange;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 20px 50px;
+    background-color: #eeedf5;
+}
+
+
+/* Effects */
+
+.pad-grid div:hover{
+    cursor: pointer;
+    background-color: #86b8da;
 
 }
