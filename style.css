@@ -1,27 +1,27 @@
 /* Layout */
 body {
-
     font-family: Lato, sans-serif;
+}
 
+h1 {
+    text-align: center;
 }
 
 .calc-main {
-    border: 2px solid black;
-    max-width: 412px;
 
-
+    display: flex;
+    justify-content: center;
 }
 
 .io-wrap {
-    border: solid 5px #fd4a4a;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
 
 }
 
 /* Dial pad grid layout */
 .pad-grid {
-    border: solid 5px #7777ff;
     display: grid;
-    gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-columns: repeat(4, minmax(20px,1fr));
 
@@ -33,13 +33,12 @@ body {
     font-weight: bold;
     border: 0.5px solid orange;
     border-radius: 5px;
-    padding: 30px 10px;
+    padding: 10px;
     background-color: #eeedf5;
     text-align: center;
 }
 
 /* Effects */
-
 .pad-grid div:hover {
     cursor: pointer;
     background-color: #86b8da;
