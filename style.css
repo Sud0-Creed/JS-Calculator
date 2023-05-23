@@ -1,0 +1,25 @@
+/* Layout */
+body{
+
+    font-family: Lato, sans-serif;
+}
+
+
+.calc-main{
+
+    border: 2px solid black;
+    width: 480px;
+    height: 600px;
+    max-width: 500px;
+}
+
+
+.io-wrap{
+    border: solid 5px red;
+    
+}
+
+.dialpad{
+    border: solid 5px blue;
+    
+}
