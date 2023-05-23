@@ -1,11 +1,13 @@
-//* All calculation function
+//! Need to import target dom elements for static loading
+import {display} from "./app.js";
+
 
 
 //* Calculate Function
 export function equal(calc) {
 
     //Evaluate string expression and return result
-    answer = eval(calc)
+    let answer = eval(calc)
 
     return answer
 }
