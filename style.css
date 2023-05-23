@@ -2,38 +2,32 @@
 body {
     font-family: libre-baskerville, sans-serif;
     background-color: #f6fbff;
+    color: #0e3249e0;
 }
 
 h1 {
     text-align: center;
     font-size: 2rem;
-    font-family: 'Segoe UI', sans-serif;
-    color: #0b304e;
+    font-family: 'Bathurst con', sans-serif;
+
 }
 
 .calc-main {
+    width: 60%;
+    max-width: 580px;
+    margin-left: 25%;
 
-    display: flex;
-    justify-content: center;
+}
+
+.numpad-wrap {
+    margin-top: 70px;
 }
 
 .io-wrap {
     margin-bottom: 2rem;
     margin-top: 2.5rem;
     display: flex;
-
 }
-
-/* Display Layout */
-.input{
-    border: 1px solid #0919254d;
-    border-radius: 5px;
-    padding: 15px 30px;
-    background-color: #d5eafc65;
-
-}
-
-
 
 /* Dial pad grid layout */
 .pad-grid {
@@ -45,25 +39,27 @@ h1 {
 
 .pad-grid div {
 
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    border: 0.1px solid #3700ff5b;
+    border: 0.1px solid #3700ff3a;
     border-radius: 5px;
-    padding: 10px;
+    padding: 25px 10px;
     background-color: #eeedf5;
     text-align: center;
-    color: #cc5607cc;
+    color: #2e1d13b7;
 }
 
-.io-wrap input {
+/* Display Layout */
+.input {
     background-color: #ffffffd3;
-    padding: 15px;
-    font-family: Cambria, sans-serif;
-    font-size: 1.5rem;
-    width: 230px;
-    height: 20px;
+    color: #0e3249e0;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    width: 530px;
+    height: 60px;
     border-radius: 7px;
-    border: 1px solid #00000067;
+    border: 1px solid #1f65e681;
 
 }
 
@@ -72,7 +68,7 @@ h1 {
     font-family: calibri;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #0e3249;
+
 }
 
 /* Effects */
@@ -85,4 +81,23 @@ h1 {
 .io-wrap input:focus {
 
     border: #1dd6d6 5px solid;
+}
+
+/*! Themes */
+.one {
+    font-family: sans-serif;
+    background: linear-gradient(to right, #06061a, #1d2b7a);
+    color: #3cf1d9;
+}
+
+.two {
+    font-family: lato, sans-serif;
+    background: linear-gradient(to right, #4a2574, #b46bd1);
+    color: #f5a681;
+}
+
+.three {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #cf3a20, #fac043);
+    color: #250304;
 }
