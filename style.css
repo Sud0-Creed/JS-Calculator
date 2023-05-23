@@ -1,19 +1,16 @@
 /* Layout */
 body {
-    /* font-family: libre-baskerville, sans-serif;
-    background-color: #f6fbff;
-    color: #0e3249e0; */
-
     font-family: libre-baskerville, sans-serif;
-    background-color: #e97742;
-    color: #3a1d0c;
+    background-color: #f6fbff;
+    color: #0e3249e0;
+
     
 }
 
 h1 {
     text-align: center;
     font-size: 2rem;
-    font-family: '1 punk', sans-serif;
+    font-family: 'Bathurst con', sans-serif;
   
 }
 
