@@ -5,6 +5,8 @@ import {equal, clear, del} from "./calculations.js";
 export const display = document.querySelector(".input");
 export const pad = document.querySelector(".pad-grid");
 
+console.log(equal)
+
 
 //* Added event listen to the parent element.
 //* Used event bubbling on parent element.
