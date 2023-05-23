@@ -20,7 +20,7 @@ h1 {
 .io-wrap {
     margin-bottom: 2rem;
     margin-top: 2.5rem;
-
+    display: flex;
 }
 
 /* Dial pad grid layout */
@@ -43,7 +43,7 @@ h1 {
     color: #cc5607cc;
 }
 
-.io-wrap input {
+.input {
     background-color: #ffffffd3;
     padding: 15px;
     font-family: Cambria, sans-serif;
@@ -60,7 +60,7 @@ h1 {
     font-family: calibri;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #0e3249;
+    color: #0e3249; 
 }
 
 /* Effects */
