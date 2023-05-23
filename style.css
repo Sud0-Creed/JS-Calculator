@@ -1,44 +1,46 @@
 /* Layout */
-body{
+body {
 
     font-family: Lato, sans-serif;
+
 }
 
-
-.calc-main{
-
+.calc-main {
     border: 2px solid black;
-    width: 480px;
-    height: 600px;
-    max-width: 500px;
-}
+    max-width: 412px;
 
-
-.io-wrap{
-    border: solid 5px rgb(253, 74, 74);
-    
-}
-
-.pad-grid{
-    border: solid 5px blue;
 
 }
 
-.pad-grid div{
+.io-wrap {
+    border: solid 5px #fd4a4a;
+
+}
+
+/* Dial pad grid layout */
+.pad-grid {
+    border: solid 5px #7777ff;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(20px,1fr));
+
+}
+
+.pad-grid div {
 
     font-size: 2rem;
     font-weight: bold;
     border: 0.5px solid orange;
     border-radius: 5px;
-    width: fit-content;
-    padding: 20px 50px;
+    padding: 30px 10px;
     background-color: #eeedf5;
+    text-align: center;
 }
-
 
 /* Effects */
 
-.pad-grid div:hover{
+.pad-grid div:hover {
     cursor: pointer;
     background-color: #86b8da;
 
