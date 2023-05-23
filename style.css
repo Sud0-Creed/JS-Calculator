@@ -15,11 +15,18 @@ body{
 
 
 .io-wrap{
-    border: solid 5px red;
+    border: solid 5px rgb(253, 74, 74);
     
 }
 
-.dialpad{
+.pad-grid{
     border: solid 5px blue;
-    
+
+}
+
+.pad-grid div{
+
+    font-weight: bold;
+    border: 0.5px solid orange;
+
 }
