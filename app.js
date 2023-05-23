@@ -1,5 +1,8 @@
-//* Target DOM elements
+//Import my modules
+import { equal, clear, del } from "./calculations"
 
+
+//* Target DOM elements
 const display = document.querySelector('.input')
 const pad = document.querySelector('.pad-grid')
 
@@ -32,13 +35,13 @@ pad.addEventListener('click', function (e) {
 
     }
 
+    else if (e.target.className == 'clear'){
+
+        clear()
+
+    }
+
+
 })
 
-//! Functions test
-function equal(calc) {
 
-    //Evaluate string expression and return result
-    answer = eval(calc)
-
-    return answer
-}
