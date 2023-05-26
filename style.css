@@ -3,6 +3,9 @@ body {
     font-family: libre-baskerville, sans-serif;
     background-color: #f6fbff;
     color: #0e3249e0;
+    color: #0e3249e0;
+
+    
 }
 
 h1 {
@@ -22,9 +25,11 @@ h1 {
     margin-top: 70px;
 }
 
+
 .io-wrap {
     margin-bottom: 2rem;
     margin-top: 2.5rem;
+    display: flex;
     display: flex;
 }
 
@@ -39,17 +44,19 @@ h1 {
 .pad-grid div {
 
     font-size: 2rem;
+    font-size: 2rem;
     font-weight: bold;
     border: 0.1px solid #3700ff3a;
+    border: 0.1px solid #3700ff3a;
     border-radius: 5px;
+    padding: 25px 10px;
     padding: 25px 10px;
     background-color: #eeedf5;
     text-align: center;
     color: #2e1d13b7;
 }
 
-/* Display Layout */
-.input {
+.io-wrap input {
     background-color: #ffffffd3;
     color: #0e3249e0;
     font-family: sans-serif;
@@ -59,6 +66,7 @@ h1 {
     height: 60px;
     border-radius: 7px;
     border: 1px solid #1f65e681;
+    border: 1px solid #1f65e681;
 
 }
 
@@ -67,6 +75,7 @@ h1 {
     font-family: calibri;
     font-size: 1.3rem;
     font-weight: bold;
+
 
 }
 
