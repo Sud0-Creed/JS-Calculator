@@ -7,7 +7,7 @@ body {
 
 h1 {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: 'Bathurst con', sans-serif;
 
 }
@@ -15,7 +15,7 @@ h1 {
 .calc-main {
     margin-left: 10%;
     margin-right: 10%;
-    max-width: 1000px;
+    max-width: 550px;
 }
 
 .numpad-wrap {
@@ -31,18 +31,16 @@ h1 {
 /* Dial pad grid layout */
 .pad-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-columns: repeat(4, minmax(20px,1fr));
-
+    grid-template-columns: repeat(4, minmax(20px, 1fr));
 }
 
 .pad-grid div {
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border: 0.1px solid #3700ff3a;
     border-radius: 5px;
-    padding: 25px 10px;
+    padding: 20px 0;
     background-color: #eeedf5;
     text-align: center;
     color: #2e1d13b7;
@@ -84,19 +82,39 @@ h1 {
 
 /*! Themes */
 .one {
-    font-family: sans-serif;
     background: linear-gradient(to right, #06061a, #1d2b7a);
     color: #3cf1d9;
 }
 
 .two {
-    font-family: lato, sans-serif;
     background: linear-gradient(to right, #4a2574, #b46bd1);
     color: #f5a681;
 }
 
 .three {
-    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to right, #cf3a20, #fac043);
     color: #250304;
+}
+
+/** Media Query **/
+@media (max-width:600px) {
+
+    .io-wrap {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input {
+        width: auto;
+    }
+
+    .io-wrap label {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
 }
