@@ -49,7 +49,7 @@ h1 {
     padding: 25px 10px;
     background-color: #eeedf5;
     text-align: center;
-    color: #e96e1ce0;
+    color: #120d2ead;
 }
 
 /* Display Layout */
@@ -62,7 +62,7 @@ h1 {
     height: 60px;
     border-radius: 7px;
     border: 1px solid #1f65e681;
-
+    color: #06031ad8;
 }
 
 .io-wrap label {
@@ -89,20 +89,21 @@ h1 {
 /*! Themes */
 .one{
     font-family: sans-serif;
-    background-color: #050c13;
-    color: white;
+    background: linear-gradient(to right, #123d7e, #0c032e);
+    color: #39bd70;
 }
 
 .two{
-    font-family: lato, sans-serif;
-    background-color: #82c5a3;
-    color: #593b8a;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #e97598, #df752f);
+
+    color: #583145;
 }
 
 .three{
-    font-family: libre-baskerville, sans-serif;
-    background-color: #e97742;
-    color: #3a1d0c;
+    font-family: sans-serif;
+    background: linear-gradient(to left, #5f127e, #8f75ee);
+    color: #cddfeb;
 }
 
 
