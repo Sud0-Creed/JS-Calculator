@@ -21,6 +21,8 @@ pad.addEventListener("click", function (e) {
         //Append the value clicked to the display
         display.innerHTML += div;
 
+        display.style.color = "#06031ad8"
+
     } else if (e.target.className == "equal") {
         //Get all the inputs
         const output = display.innerHTML;
