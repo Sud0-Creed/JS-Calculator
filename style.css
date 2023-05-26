@@ -6,17 +6,16 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     font-family: 'Bathurst con', sans-serif;
 
 }
 
 .calc-main {
-    width: 60%;
-    max-width: 580px;
-    margin-left: 25%;
-
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 1000px;
 }
 
 .numpad-wrap {
