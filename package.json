@@ -1,13 +1,17 @@
 {
   "name": "js-calculator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Calculator with 2 themes.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build":"webpack"
   },
-
+  
   "keywords": [],
   "author": "Sud0 Creed",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  }
 }
