@@ -4,6 +4,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+    mode:'development',
 
     //* Set entry point of webpack bundling
     entry: "./src/app.js",
