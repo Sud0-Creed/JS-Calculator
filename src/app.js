@@ -1,3 +1,8 @@
+//! Import css for webpack bundler
+import './style.css'
+//import './creed.png'
+
+
 //Import my modules
 import {equal, clear, del} from "./calculations.js";
 
