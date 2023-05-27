@@ -34,7 +34,6 @@ pad.addEventListener("click", function (e) {
         display.style.color = "#0f6be2"
 
 
-
         display.textContent = answer;
     } else if (e.target.className == "backspace") {
         del()
@@ -53,11 +52,6 @@ pad.addEventListener("click", function (e) {
     else if (e.target.className == "t2"){
         body.setAttribute('class', 'two')
     }
-
-    else if (e.target.className == "t3"){
-        body.setAttribute('class', 'three')
-    }
-
 
 });
 

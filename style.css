@@ -104,11 +104,6 @@ h1 {
     color: #f5a681;
 }
 
-.three {
-    background: linear-gradient(to right, #cf3a20, #fac043);
-    color: #250304;
-}
-
 /** Media Query **/
 @media (max-width:600px) {
 
