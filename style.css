@@ -9,7 +9,20 @@ h1 {
     text-align: left;
     font-size: 1.7rem;
     font-family: 'Bathurst con', sans-serif;
+    order: 1;
+    text-shadow: #06061a38 5px 4px 3px;
 
+}
+
+.icon {
+    height: 70px;
+    width: 75px;
+    order: 0;
+}
+
+.heading {
+    display: flex;
+    gap: 30px;
 }
 
 .calc-main {
@@ -106,6 +119,7 @@ h1 {
 
     .input {
         width: auto;
+        margin-top: 30px;
     }
 
     .io-wrap label {
@@ -115,6 +129,20 @@ h1 {
 
     h1 {
         text-align: center;
+    }
+
+    .icon {
+        height: 80px;
+        width: 85px;
+        margin-bottom: -30px;
+
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 
 }
