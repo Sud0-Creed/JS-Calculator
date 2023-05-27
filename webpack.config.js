@@ -1,5 +1,8 @@
 const path = require('path');
 
+//*Including the html webpack plugin
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
 
     //* Set entry point of webpack bundling
@@ -31,5 +34,15 @@ module.exports = {
                 use: ['html-loader'] // Use HTML loader
             }
         ]
-    }
+    },
+
+    //Add plugin here
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Webpack App',
+            filename: 'index.html',
+
+        }),
+    ],
+
 };

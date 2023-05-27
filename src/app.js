@@ -1,11 +1,10 @@
 //! Import css for webpack bundler
-//* This is the entry point to other files
 import './style.css'
+
 
 
 //Import my modules
 import {equal, clear, del} from "./calculations.js";
-import { from } from 'webpack-sources/lib/CompatSource';
 
 //* Target DOM elements
 export const display = document.querySelector(".input");
