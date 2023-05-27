@@ -1,5 +1,5 @@
 //! Need to import target dom elements for static loading
-import {display} from "./app.js";
+import {display} from "./index.js";
 
 
 
