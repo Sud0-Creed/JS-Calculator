@@ -12,7 +12,7 @@ module.exports = {
     output: {
         filename: "main.js",
         clean: true,
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "build"),
         assetModuleFilename: '[name] [ext]',
         
     },
@@ -41,7 +41,6 @@ module.exports = {
             
             {
                 test: /\.(png|jpeg|jpg|gif|svg)$/i, // Match image files
-                use: ['file-loader'], // Use file loader
                 type: 'asset/resource'
             }, 
             

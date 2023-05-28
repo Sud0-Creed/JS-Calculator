@@ -1,0 +1,143 @@
+/* Layout */
+body {
+    font-family: libre-baskerville, sans-serif;
+    background-color: #f6fbff;
+    color: #0e3249e0;
+}
+
+h1 {
+    text-align: left;
+    font-size: 1.7rem;
+    font-family: 'Bathurst con', sans-serif;
+    order: 1;
+    text-shadow: #06061a38 5px 4px 3px;
+
+}
+
+.icon {
+    height: 70px;
+    width: 75px;
+    order: 0;
+}
+
+.heading {
+    display: flex;
+    gap: 30px;
+}
+
+.calc-main {
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 550px;
+}
+
+.numpad-wrap {
+    margin-top: 70px;
+}
+
+.io-wrap {
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+    display: flex;
+}
+
+/* Dial pad grid layout */
+.pad-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20px, 1fr));
+}
+
+.pad-grid div {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 0.1px solid #3700ff3a;
+    border-radius: 5px;
+    padding: 20px 0;
+    background-color: #eeedf5;
+    text-align: center;
+    color: #2e1d13b7;
+}
+
+/* Display Layout */
+.input {
+    background-color: #ffffffd3;
+    color: #0e3249e0;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    width: 530px;
+    height: 60px;
+    border-radius: 7px;
+    border: 1px solid #1f65e681;
+
+}
+
+.io-wrap label {
+    margin-left: 30px;
+    font-family: calibri;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+/* Effects */
+.pad-grid div:hover {
+    cursor: pointer;
+    background-color: #86b8da;
+
+}
+
+.io-wrap input:focus {
+
+    border: #1dd6d6 5px solid;
+}
+
+/*! Themes */
+.one {
+    background: linear-gradient(to right, #06061a, #1d2b7a);
+    color: #3cf1d9;
+}
+
+.two {
+    background: linear-gradient(to right, #4a2574, #b46bd1);
+    color: #f5a681;
+}
+
+/** Media Query **/
+@media (max-width:600px) {
+
+    .io-wrap {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input {
+        width: auto;
+        margin-top: 30px;
+    }
+
+    .io-wrap label {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .icon {
+        height: 80px;
+        width: 85px;
+        margin-bottom: -30px;
+
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}
