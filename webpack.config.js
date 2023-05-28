@@ -4,16 +4,31 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    mode:'development',
-
+  
     //* Set entry point of webpack bundling
     entry: "./src/app.js",
     
     //* Set output file name and path
     output: {
         filename: "main.js",
+        clean: true,
         path: path.resolve(__dirname, "dist"),
-        assetModuleFilename: '[name] [ext]'
+        assetModuleFilename: '[name] [ext]',
+        
+    },
+
+    devServer:{
+
+        static:{
+            directory: path.resolve(__dirname, 'dist'),
+        },
+
+        port: 3000,
+        open: true,
+        hot: true,
+        compress: true,
+        historyApiFallback: true,
+
     },
 
 
@@ -42,6 +57,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Webpack App',
             filename: 'index.html',
+            inject: 'head',
+            scriptLoading: 'defer',
+            template: './src/index.html'
 
         }),
     ],

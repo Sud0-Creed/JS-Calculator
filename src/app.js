@@ -1,5 +1,5 @@
 //! Import css for webpack bundler
-import './style.css'
+import './styles/style.css';
 
 
 
