@@ -1,3 +1,0 @@
-//! Import css for webpack bundler
-
-//! Need to import target dom elements for static loading
