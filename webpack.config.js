@@ -17,6 +17,8 @@ module.exports = {
         
     },
 
+    //devtool: "source-map",
+
     devServer:{
 
         static:{
@@ -37,6 +39,18 @@ module.exports = {
             {
                 test: /\.css$/, //* Match css files.
                 use: ['style-loader', 'css-loader'] //* Use CSS Loaders 
+            },
+
+            {
+              test: /\.js$/,
+              exclude: /node_modules/,
+              use:{
+                loader: 'babel-loader',
+                options:{
+                  presets:['@babel/preset-env'],
+                }
+              }
+
             },
             
             {
