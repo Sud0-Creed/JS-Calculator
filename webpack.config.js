@@ -13,7 +13,7 @@ module.exports = {
         filename: "main.js",
         clean: true,
         path: path.resolve(__dirname, "build"),
-        assetModuleFilename: '[name] [ext]',
+      
         
     },
 
@@ -41,11 +41,19 @@ module.exports = {
             
             {
                 test: /\.(png|jpeg|jpg|gif|svg)$/i, // Match image files
-                type: 'asset/resource',
-                use:['file-loader',
+            
+                use:[{
+                  loader: 'file-loader',
+                  options: {
+                    name: '[name].[ext]',
+     
+                  },
+                },
+                
                 {
                   loader: 'image-webpack-loader',
                   options: {
+
                     mozjpeg: {
                       progressive: true,
                     },
