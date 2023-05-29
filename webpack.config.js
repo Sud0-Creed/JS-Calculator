@@ -13,7 +13,7 @@ module.exports = {
         filename: "main.js",
         clean: true,
         path: path.resolve(__dirname, "build"),
-      
+      assetModuleFilename: '[name] [ext]' 
         
     },
 
@@ -41,21 +41,18 @@ module.exports = {
             
             {
                 test: /\.(png|jpeg|jpg|gif|svg)$/i, // Match image files
-            
-                use:[{
-                  loader: 'file-loader',
-                  options: {
-                    name: '[name].[ext]',
-     
-                  },
-                },
+                type: 'asset/resource',
+                use:[
                 
+                //* Image compression - Fixed output multiple images
+                //* Fix: Removed the file loader
                 {
                   loader: 'image-webpack-loader',
                   options: {
 
                     mozjpeg: {
                       progressive: true,
+                      quality: 50
                     },
                     // optipng.enabled: false will disable optipng
                     optipng: {
